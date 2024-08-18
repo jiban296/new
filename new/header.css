@@ -1,0 +1,114 @@
+/* Navbar styles */
+header .navbar {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding: 0;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 70px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #009688;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+/* Profile Section */
+.profile {
+    position: relative;
+    display: inline-block;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.profile img:hover {
+    transform: scale(1.1);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 10;
+    width: 150px;
+    overflow: hidden;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #2c3e50;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Show the dropdown menu when the profile is clicked */
+.profile.active .dropdown-menu {
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dropdown-menu {
+        width: 120px;
+    }
+
+    .dropdown-menu a {
+        padding: 8px 10px;
+    }
+}

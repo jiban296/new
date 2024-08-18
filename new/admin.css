@@ -1,0 +1,63 @@
+/* ad.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://t3.ftcdn.net/jpg/03/91/46/10/360_F_391461057_5P0BOWl4lY442Zoo9rzEeJU0S2c1WDZR.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #333;
+    margin-left:140px;
+    margin-bottom:  40px;
+}
+#form {
+    background-color: rgba(75, 112, 112, 0.8);
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 35px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #e45c79;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}

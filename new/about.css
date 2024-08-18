@@ -1,0 +1,121 @@
+
+.futsal-info-images  img {
+    width: 500px;
+    height: 300px;
+}
+/* About Section */
+.about-section {
+    background-color: #1abc9c;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 4px solid #16a085;
+}
+
+.about-section h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.about-section p {
+    font-size: 20px;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 15px auto;
+}
+
+/* Futsal Info Section */
+.futsal-info-section {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: left;
+    border-bottom: 4px solid #ecf0f1;
+}
+
+.futsal-info-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #1abc9c;
+}
+
+.futsal-info-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.futsal-info-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.futsal-info-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.futsal-info-images img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.futsal-info-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Community Section */
+.community-section {
+    background-color: #ecf0f1;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.community-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #1abc9c;
+}
+
+.community-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.community-images img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.community-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .futsal-info-content {
+        flex-direction: column;
+    }
+
+    .futsal-info-text {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .community-images img {
+        max-width: 100%;
+    }
+}
